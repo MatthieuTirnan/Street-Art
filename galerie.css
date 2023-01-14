@@ -1,0 +1,426 @@
+/*Police-----------------------------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+/*Général--------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+main {
+    padding: 50px 0;
+    }
+h2 {
+    font-size: 28px;
+    font-family: 'Mali', cursive;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+    margin: 0;
+}
+
+em {
+    font-size: 14px;
+}
+
+.turquoise {
+    color: #037d9d;
+}
+
+.rose {
+    color: #db0059;
+}
+
+.suite {
+
+    color: white;
+    text-decoration: none;
+    background-color: #1d1e3d;
+    padding: 15px;
+
+}
+
+.flexbutton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.white {
+    color: white;
+}
+
+.bgcrose {
+    background-color: #db0059;
+}
+
+/*header--------------------------------------------------------------------------*/
+
+.logo {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.logoHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px;
+    font-family: 'Mali', cursive;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+nav a:hover {
+    border-left: 2px solid #037d9d;
+    border-bottom: 2px solid #037d9d;
+    background-color: #ededed;
+}
+
+/*image-----------------------------------------------------------------*/
+
+.banner1 {
+    background: url("./images/banner2.jpg") fixed;
+    background-position: bottom;
+    background-size: cover;
+    padding: 100px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner1 .content p {
+    color: #db0059;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*img--------------------------------------------------------------------*/
+
+.gridcontainer img {
+    width: 100%;
+    margin: 15px 0;
+}
+
+/*article---------------------------------------------*/
+
+.art1 {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+}
+.art1 p{
+    margin:5px;
+}
+.art2 p{
+    margin:5px;
+}
+
+.art1 p:before {
+    content: "<< ";
+    color: #db0059;
+    font-weight: bold;
+}
+
+.art2 p:before {
+     font-family: "Font Awesome 5 Free";
+    font-weight: 900; 
+    content: "\f058";
+    color: green;
+    padding-right: 10px;
+}
+
+.art2 {
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+
+/*--------------------------------contact*/
+
+.titre-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-newsletter {
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.newsletter {
+    padding: 30px;
+}
+
+.reseau {
+    padding: 30px;
+}
+
+.picto {
+    display: flex;
+    justify-content: center;
+}
+
+.pic {
+    padding: 30px;
+    margin: 0 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#input1 {
+    width: 70%;
+    height: 30px;
+    background-color: pink;
+    border: 0 solid transparent;
+}
+
+#button {
+    width: 125px;
+    height: 40px;
+    margin: 20px 0;
+    color: #db0059;
+    font-weight: bold;
+}
+
+/*footer-------------------------------------------*/
+
+footer {
+    background-color: #808080;
+    width: 100%;
+}
+
+.imgfooter {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.logo3w {
+    width: 100%;
+    height: 100%;
+}
+
+.underline {
+    color: orange;
+}
+
+/*Format Tablette-------------------------------------------------*/
+
+@media screen and (min-width: 780px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+    }
+    nav a {
+        margin: 15px;
+    }
+    .pic1 {
+        grid-area: pic1;
+    }
+    .pic2 {
+        grid-area: pic2;
+    }
+    .pic3 {
+        grid-area: pic3;
+    }
+    .pic4 {
+        grid-area: pic4;
+    }
+    .pic5 {
+        grid-area: pic5;
+    }
+    .pic6 {
+        grid-area: pic6;
+    }
+    .pic7 {
+        grid-area: pic7;
+    }
+    .pic8 {
+        grid-area: pic8;
+    }
+    .pic9 {
+        grid-area: pic9;
+    }
+    .pic10 {
+        grid-area: pic10;
+    }
+    .pic11 {
+        grid-area: pic11;
+    }
+    .pic12 {
+        grid-area: pic12;
+    }
+    .pic13 {
+        grid-area: pic13;
+    }
+    .pic14 {
+        grid-area: pic14;
+    }
+    .pic15 {
+        grid-area: pic15;
+    }
+    .pic16 {
+        grid-area: pic16;
+    }
+    .pic7 {
+        grid-area: pic17;
+    }
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        grid-template-areas: " pic1 pic2" "pic1 pic3" " pic4 pic5" " pic4 pic6" " pic7 pic6" " pic8 pic9" " pic10 pic9" " pic11 pic12" " pic11 pic13" " pic14 pic13" " pic15 pic16" " pic15 pic17";
+    }
+    .gridcontainer img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+/*format pc-----------------------------------------------------*/
+
+@media screen and (min-width: 980px) {
+    body {
+        background-color: #ededed;
+    }
+    /*-----------------------------------------------------------------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        background-color: white;
+        margin: 0 auto;
+    }
+    nav {
+        margin: 0;
+    }
+    nav a {
+        margin: 5px;
+    }
+    .logo {
+        width: 250px;
+        height: 125px;
+        margin: 0;
+    }
+    /*-----------------------------------------------------------------------*/
+    main {
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        padding: 50px 0;
+    }
+    /*-----------------------------------------------------------------------*/
+    .titre-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-bottom: 40px;
+    }
+    .gridcontainer {
+        padding:10px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        grid-template-areas: 
+        " pic1 pic2 pic3 pic4"
+        " pic1 pic5 pic6 pic4"
+        " pic7 pic8 pic6 pic9"
+        " pic10 pic11 pic12 pic9"
+        " pic13 pic11 pic14 pic15"
+        " pic13 pic16 pic17 pic15";
+    }
+    .flex{
+        display:flex;
+        justify-content:center;
+    }
+    .art1 {
+    width: 44%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+
+    .art2 {
+    width: 44%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+}
+    /*-----------------------------------------------------------------------*/
+    

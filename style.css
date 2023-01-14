@@ -1,0 +1,343 @@
+/*Police-----------------------------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+/*Général--------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: 'Mali', cursive;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: 'Mali', cursive;
+    margin: 0;
+}
+
+em {
+    font-size: 14px;
+}
+
+.turquoise {
+    color: #037d9d;
+}
+
+.rose {
+    color: #db0059;
+}
+
+.suite {
+
+    color: white;
+    text-decoration: none;
+    background-color: #1d1e3d;
+    padding: 15px;
+
+}
+
+.flexbutton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.white {
+    color: white;
+}
+
+.bgcrose {
+    background-color: #db0059;
+}
+
+/*header--------------------------------------------------------------------------*/
+
+.logo {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.logoHeader {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 15px;
+    font-family: 'Mali', cursive;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+nav a:hover {
+    border-left: 2px solid #037d9d;
+    border-bottom: 2px solid #037d9d;
+    background-color: #ededed;
+}
+
+/*image-----------------------------------------------------------------*/
+
+.banner1 {
+    background: url("./images/banner1.jpg")center fixed;
+    background-size: cover;
+    padding: 50px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 90%;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner1 .content p {
+    color: #db0059;
+    font-size: 30px;
+    margin: 10px;
+    font-family: 'Mali', cursive;
+    font-weight: bold;
+}
+
+/*citation---------------------------------------------------------*/
+
+blockquote {
+    width: 80%;
+    font-weight: bold;
+    border-bottom: 2px solid #037d9d;
+    border-left: 2px solid #037d9d;
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+blockquote q {
+    font-size: 25px;
+    font-family: 'Mali', cursive;
+    margin: 20px;
+}
+
+blockquote p {
+    font-size: 20px;
+}
+
+/*Titre rubrique------------------------------------------------------*/
+
+.titre-rubrique {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+/*article-----------------------------------------------*/
+
+.img-art {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.imgactu {
+    width: 100%;
+    object-fit: cover;
+}
+
+.art {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sec {
+    margin: 50px auto;
+    background-color: #ededed;
+    padding: 20px;
+}
+
+/*--------------------------------contact*/
+
+.titre-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec-newsletter {
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.newsletter {
+    padding: 30px;
+}
+
+.reseau {
+    padding: 30px;
+}
+
+.picto {
+    display: flex;
+    justify-content: center;
+}
+
+.pic {
+    padding: 30px;
+    margin: 0 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+#input1 {
+    width: 70%;
+    height: 30px;
+    background-color: pink;
+    border: 0 solid transparent;
+}
+
+#button {
+    width: 125px;
+    height: 40px;
+    margin: 20px 0;
+    color: #db0059;
+    font-weight: bold;
+}
+
+/*footer-------------------------------------------*/
+
+footer {
+    background-color: #808080;
+    width: 100%;
+}
+
+.imgfooter {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.logo3w {
+    width: 100%;
+    height: 100%;
+}
+
+.underline {
+    color: orange;
+}
+
+/*Format Tablette-------------------------------------------------*/
+
+@media screen and (min-width: 780px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+    }
+    nav a {
+        margin: 15px;
+    }
+}
+
+/*format pc-----------------------------------------------------*/
+
+@media screen and (min-width: 980px) {
+    body {
+        background-color: #ededed;
+    }
+    /*-----------------------------------------------------------------------*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        background-color: white;
+        margin: 0 auto;
+    }
+    nav {
+        margin: 0;
+    }
+    nav a {
+        margin: 5px;
+    }
+    .logo {
+        width: 250px;
+        height: 125px;
+        margin: 0;
+    }
+    /*-----------------------------------------------------------------------*/
+    main {
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .img-art {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .art {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .sec {
+        width: 40%;
+        margin: 50px 0;
+        padding: 20px;
+    }
+    /*-----------------------------------------------------------------------*/
+    .titre-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-bottom: 40px;
+    }
+}
+
+
+/*-----------------------------------------------------------------------*/
